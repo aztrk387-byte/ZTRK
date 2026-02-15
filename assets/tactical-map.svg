@@ -1,0 +1,66 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1F2937" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowGreen" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L14,7 L0,14 z" fill="#34D399"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L14,7 L0,14 z" fill="#F87171"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#grid)" opacity="0.6"/>
+
+  <rect x="110" y="100" width="1380" height="800" rx="30" fill="#0F172A" stroke="#334155" stroke-width="4"/>
+
+  <!-- Play area blocks -->
+  <g filter="url(#shadow)">
+    <rect x="180" y="170" width="300" height="220" rx="16" fill="#1E3A8A" stroke="#60A5FA" stroke-width="3"/>
+    <rect x="560" y="170" width="480" height="220" rx="16" fill="#1F2937" stroke="#93C5FD" stroke-width="3"/>
+    <rect x="1120" y="170" width="300" height="220" rx="16" fill="#7C2D12" stroke="#FDBA74" stroke-width="3"/>
+
+    <rect x="240" y="450" width="260" height="180" rx="16" fill="#111827" stroke="#94A3B8" stroke-width="3"/>
+    <rect x="560" y="450" width="480" height="180" rx="16" fill="#14532D" stroke="#4ADE80" stroke-width="3"/>
+    <rect x="1100" y="450" width="260" height="180" rx="16" fill="#111827" stroke="#94A3B8" stroke-width="3"/>
+
+    <rect x="330" y="700" width="260" height="130" rx="16" fill="#3F3F46" stroke="#A1A1AA" stroke-width="3"/>
+    <rect x="680" y="700" width="260" height="130" rx="16" fill="#3F3F46" stroke="#A1A1AA" stroke-width="3"/>
+    <rect x="1030" y="700" width="260" height="130" rx="16" fill="#3F3F46" stroke="#A1A1AA" stroke-width="3"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="330" y="295" fill="#E2E8F0" font-family="Inter, Arial" font-size="44" text-anchor="middle" font-weight="700">ALPHA</text>
+  <text x="800" y="295" fill="#E2E8F0" font-family="Inter, Arial" font-size="44" text-anchor="middle" font-weight="700">MID CONTROL</text>
+  <text x="1270" y="295" fill="#FFE4D6" font-family="Inter, Arial" font-size="44" text-anchor="middle" font-weight="700">BRAVO</text>
+
+  <text x="800" y="560" fill="#DCFCE7" font-family="Inter, Arial" font-size="38" text-anchor="middle" font-weight="700">CHARLIE ZONE</text>
+
+  <text x="190" y="950" fill="#94A3B8" font-family="Inter, Arial" font-size="26">TACTICAL MAP (Editable SVG Template)</text>
+
+  <!-- Route arrows -->
+  <path d="M220 780 C280 720, 300 610, 350 560" stroke="#34D399" stroke-width="10" fill="none" marker-end="url(#arrowGreen)"/>
+  <path d="M420 770 C520 720, 640 640, 760 560" stroke="#34D399" stroke-width="10" fill="none" marker-end="url(#arrowGreen)"/>
+  <path d="M1380 760 C1310 700, 1240 630, 1180 560" stroke="#34D399" stroke-width="10" fill="none" marker-end="url(#arrowGreen)"/>
+
+  <path d="M1260 260 C1160 300, 1030 340, 900 370" stroke="#F87171" stroke-width="10" fill="none" marker-end="url(#arrowRed)"/>
+  <path d="M340 260 C430 300, 540 340, 670 370" stroke="#F87171" stroke-width="10" fill="none" marker-end="url(#arrowRed)"/>
+
+  <!-- Legend -->
+  <rect x="1190" y="700" width="250" height="180" rx="14" fill="#0B1220" stroke="#334155" stroke-width="2"/>
+  <line x1="1220" y1="750" x2="1300" y2="750" stroke="#34D399" stroke-width="8" marker-end="url(#arrowGreen)"/>
+  <text x="1320" y="758" fill="#E2E8F0" font-family="Inter, Arial" font-size="22">ENTRY</text>
+  <line x1="1220" y1="800" x2="1300" y2="800" stroke="#F87171" stroke-width="8" marker-end="url(#arrowRed)"/>
+  <text x="1320" y="808" fill="#E2E8F0" font-family="Inter, Arial" font-size="22">FLANK</text>
+  <circle cx="1260" cy="845" r="8" fill="#FDE68A"/>
+  <text x="1320" y="852" fill="#E2E8F0" font-family="Inter, Arial" font-size="22">ROTATE</text>
+</svg>
