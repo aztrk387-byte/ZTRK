@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars Tactical Map</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header>
+        <h1>Star Wars Tactical Map</h1>
+        <p>Garry's Mod için sembol yerleştir, çiz ve not al.</p>
+      </header>
+
+      <section class="click-counter" aria-label="Sayaç">
+        <button id="countBtn" type="button">Tıkla</button>
+        <p>Toplam tıklama: <strong id="countValue">0</strong></p>
+      </section>
+
+      <section class="controls" aria-label="Harita araçları">
+        <div class="tool-group">
+          <label for="toolMode">Mod</label>
+          <select id="toolMode">
+            <option value="draw">Çizim</option>
+            <option value="symbol">Sembol</option>
+            <option value="text">Yazı</option>
+          </select>
+        </div>
+
+        <div class="tool-group" id="symbolGroup">
+          <label for="symbolSelect">Sembol</label>
+          <select id="symbolSelect">
+            <option value="🔴">İmparatorluk</option>
+            <option value="🔵">İsyancı</option>
+            <option value="🛸">Uzay Gemisi</option>
+            <option value="⚔️">Çatışma</option>
+            <option value="📡">Komuta Noktası</option>
+            <option value="🏴">Hedef</option>
+          </select>
+        </div>
+
+        <div class="tool-group" id="textGroup">
+          <label for="textInput">Yazı</label>
+          <input id="textInput" type="text" placeholder="Komuta merkezi" maxlength="40" />
+        </div>
+
+        <div class="tool-group">
+          <label for="colorPicker">Renk</label>
+          <input id="colorPicker" type="color" value="#00f0ff" />
+        </div>
+
+        <div class="tool-group">
+          <label for="lineWidth">Kalınlık</label>
+          <input id="lineWidth" type="range" min="1" max="10" value="3" />
+        </div>
+
+        <button id="clearMap" type="button">Haritayı Temizle</button>
+      </section>
+
+      <section class="map-wrap">
+        <canvas id="tacticalMap" width="1000" height="620" aria-label="Tactical map"></canvas>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
